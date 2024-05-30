@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    animation: body 20s linear infinite alternate;
+}
+#ball{
+    height: 60px;
+    width: 60px;
+    background-color: black;
+   position: absolute;
+   top:0;
+   border-radius: 50%;
+   animation: ball 20s linear infinite ;
+}
+
+
+@keyframes ball {
+
+    
+    0%{
+        transform: translatey(0px);
+        background-color:black
+    }
+    25%{
+        transform: translate(30vw,95vh);
+        background-color:white
+    }
+     50%{
+        transform: translate(60vw,0);
+        background-color:black
+    } 
+   
+
+    
+     100%{
+        transform: translate(95vw ,95vh);
+        background-color: white
+    }
+}  
+@keyframes body {
+
+    
+    0%{
+       background-color:white;}
+    25%{
+
+        background-color: black;
+    }
+     50%{
+background-color: white;
+    } 
+   
+
+    
+     100%{
+background-color: black;
+    }
+}  
